@@ -11,7 +11,7 @@ export default function CourseCard({ course, index, onMutateCourse }) {
 
   function toggleTask(id) {
     // TODO (TASK 4): toggle task.isDone for the task with matching id
-    onMutateCourse(index, (tasks) => 
+    onMutateCourse(index, (tasks) =>   
     tasks.map((t) => (t.id == id? {...t, isDone: updater(c.tasks)} :t)));
   }
 
