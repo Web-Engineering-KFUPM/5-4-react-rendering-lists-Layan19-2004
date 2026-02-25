@@ -42,8 +42,11 @@ export default function CourseCard({ course, index, onMutateCourse }) {
                 - key={task.id}
                 - task={task}
                 - onToggle={toggleTask}
-                - onDelete={deleteTask}
-          */}
+                - onDelete={deleteTask}*/
+                course.tasks.map(<TaskItem key={task.id} task={task} 
+                  onToggle={toggleTask} onDelete={deleteTask}/>)
+                
+                }
         </ul>
       </section>
     </article>
